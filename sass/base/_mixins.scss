@@ -1,0 +1,12 @@
+@mixin list_wrapper($clearance) {
+      display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * $clearance);
+  margin-bottom: calc(-1 * $clearance);
+};
+
+@mixin items_in_row_for_flex($items_in_row,$margin-right,$margin-bottom) {
+      flex-basis: calc(100% / $items_in_row - var(--standard-clearance));
+  margin-right: $margin-right;
+  margin-bottom: $margin-bottom;
+};
