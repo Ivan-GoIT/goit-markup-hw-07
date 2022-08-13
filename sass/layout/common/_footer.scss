@@ -39,25 +39,19 @@
   }
 }
 
-.social-thumb {
+.social-links-position {
   margin-right: 93px;
+}
 
-  & .social-link-list .social-link {
+.social-link-list__item.social-link-list__item_futer-colors{
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--primary-white-color);
-
-    transition: background-color var(--transition-duration-and-funk);
-
-    &:focus,
-    &:hover {
-      background-color: var(--accent-color);
-    }
   }
-}
+
 
 /*Futer Mailing form */
 
-.mailing-thumb {
+.mailing-box {
   & > .title {
     font-weight: 700;
   }
@@ -99,5 +93,3 @@
     }
   }
 }
-
-

@@ -209,20 +209,17 @@ body {
   margin-bottom: 9px;
 }
 
-.social-thumb {
+.social-links-position {
   margin-right: 93px;
 }
-.social-thumb .social-link-list .social-link {
+
+.social-link-list__item.social-link-list__item_futer-colors {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
-  transition: background-color var(--transition-duration-and-funk);
-}
-.social-thumb .social-link-list .social-link:focus, .social-thumb .social-link-list .social-link:hover {
-  background-color: var(--accent-color);
 }
 
 /*Futer Mailing form */
-.mailing-thumb > .title {
+.mailing-box > .title {
   font-weight: 700;
 }
 
@@ -369,42 +366,37 @@ body {
   margin-right: calc(-1 * var(--standard-clearance));
   margin-bottom: 0;
 }
-.team-list > .item {
+.team-list__item {
   flex-basis: calc(25% - var(--standard-clearance));
   margin-right: var(--standard-clearance);
   margin-bottom: var(--standard-clearance);
 }
-
-.team-card {
+.team-list__card {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-card > img {
+.team-list__image {
   display: block;
   max-width: 100%;
 }
-
-.team-member-description {
+.team-list__description {
   padding: 30px 0;
   background-color: var(--primary-white-color);
 }
-
-.team-card .title {
+.team-list__title {
   color: var(--title-color);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-
-.speshiality {
+.team-list__speshiality {
   font-size: 16px;
   margin-bottom: 30px;
 }
-
-.social-links {
+.team-list_social-links-position {
   margin: 16px 32px 0;
 }
 
@@ -412,13 +404,12 @@ body {
   display: flex;
   margin-right: -10px;
 }
-.social-link-list .icon {
+.social-link-list__icon {
   margin: 12px;
   height: 20px;
   width: 20px;
 }
-
-.social-link {
+.social-link-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,7 +421,7 @@ body {
   fill: var(--primary-svg-color);
   transition: background-color var(--transition-duration-and-funk), fill var(--transition-duration-and-funk);
 }
-.social-link:hover, .social-link:focus {
+.social-link-list__item:hover, .social-link-list__item:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
