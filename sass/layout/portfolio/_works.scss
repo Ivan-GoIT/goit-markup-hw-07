@@ -40,10 +40,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
-  &:hover .description,
-  &:focus .description {
-    transform: translateY(-100%);
-  }
+  
 }
 
 .work-img-thumb {
@@ -56,7 +53,7 @@
   }
 }
 
-.description {
+.overlay{
   position: absolute;
 
   display: flex;
@@ -73,4 +70,8 @@
   min-height: 100%;
 
   transition: transform var(--transition-duration-and-funk);
+  .work-card:hover &,
+  .work-card:focus & {
+    transform: translateY(-100%);
+  }
 }

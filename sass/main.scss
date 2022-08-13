@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/invisible";
+@import "./utils/hidden-title";
 
 @import "./base/common";
 @import "./base/section";
@@ -18,3 +18,5 @@
 @import "./layout/portfolio/header";
 @import "./layout/portfolio/work_filter";
 @import "./layout/portfolio/works";
+@import "./layout/modal/backdrop";
+@import "./layout/modal/modal_form";
