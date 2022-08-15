@@ -51,8 +51,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -94,6 +93,9 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
 }
+.logo_color {
+  color: var(--accent-color);
+}
 
 .header > .container,
 .site-nav {
@@ -103,10 +105,6 @@ body {
 
 .header-logo {
   color: var(--title-color);
-}
-
-.header-logo_color {
-  color: var(--accent-color);
 }
 
 .nav-list,
@@ -173,25 +171,26 @@ body {
   fill: var(--accent-color);
 }
 
-.futer {
+.footer {
   padding: 60px 0;
   background-color: #2f303a;
   color: var(--primary-white-color);
 }
-.futer > .container {
+.footer > .container {
   display: flex;
 }
-.futer > .container > div:first-child {
+.footer > .container > div:first-child {
   margin-right: 70px;
 }
-.futer .logo {
+.footer-logo {
   color: inherit;
   padding: 0;
   margin-bottom: 20px;
 }
-.futer .title {
+.footer__title {
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -202,11 +201,11 @@ body {
   font-style: normal;
   line-height: 1.71;
 }
-.address .contact {
-  color: rgba(255, 255, 255, 0.6);
-}
-.address .item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .social-links-position {
@@ -219,14 +218,10 @@ body {
 }
 
 /*Futer Mailing form */
-.mailing-box > .title {
-  font-weight: 700;
-}
-
 .mailing-form {
   display: flex;
 }
-.mailing-form > .field-input {
+.mailing-form__input {
   min-width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -237,18 +232,18 @@ body {
   border-radius: 4px;
   color: var(--primary-white-color);
 }
-.mailing-form > .field-input::placeholder {
+.mailing-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.mailing-form > button {
+.mailing-form__submit-button {
   display: flex;
   align-items: center;
   padding: 10px 30px;
 }
-.mailing-form > button > svg {
+.mailing-form__submit-icon {
   height: 24px;
   width: 24px;
   margin-left: 10px;
@@ -430,11 +425,7 @@ body {
   display: flex;
   margin-right: calc(-1 * var(--standard-clearance));
 }
-.client-list .icon {
-  width: 106px;
-  height: 60px;
-}
-.client-list .thumb {
+.client-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,9 +437,13 @@ body {
   fill: var(--primary-svg-color);
   transition: fill var(--transition-duration-and-funk), border-color var(--transition-duration-and-funk);
 }
-.client-list .thumb:focus, .client-list .thumb:hover {
+.client-list__item:focus, .client-list__item:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+.client-list__icon {
+  width: 106px;
+  height: 60px;
 }
 
 .portfolio > .header {

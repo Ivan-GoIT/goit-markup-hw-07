@@ -1,4 +1,4 @@
-.futer {
+.footer {
   padding: 60px 0;
   background-color: #2f303a;
   color: var(--primary-white-color);
@@ -8,16 +8,17 @@
       margin-right: 70px;
     }
   }
-  & .logo {
+  &-logo {
     color: inherit;
     padding: 0;
     margin-bottom: 20px;
   }
 
-  & .title {
+  &__title {
     margin-bottom: 20px;
 
     font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
   }
@@ -30,12 +31,12 @@
   font-style: normal;
   line-height: 1.71;
 
-  & .contact {
-    color: rgba(255, 255, 255, 0.6);
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
   }
 
-  & .item:not(:last-child) {
-    margin-bottom: 9px;
+  &__contact {
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -43,24 +44,17 @@
   margin-right: 93px;
 }
 
-.social-link-list__item.social-link-list__item_futer-colors{
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--primary-white-color);
-  }
-
+.social-link-list__item.social-link-list__item_futer-colors {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+}
 
 /*Futer Mailing form */
-
-.mailing-box {
-  & > .title {
-    font-weight: 700;
-  }
-}
 
 .mailing-form {
   display: flex;
 
-  & > .field-input {
+  &__input {
     min-width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -80,16 +74,15 @@
     }
   }
 
-  & > button {
+  &__submit-button {
     display: flex;
     align-items: center;
     padding: 10px 30px;
-
-    & > svg {
-      height: 24px;
-      width: 24px;
-      margin-left: 10px;
-      fill: var(--primary-white-color);
-    }
+  }
+  &__submit-icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    fill: var(--primary-white-color);
   }
 }

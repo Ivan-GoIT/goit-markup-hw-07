@@ -26,7 +26,7 @@
             href="./index.html"
             class="header-logo logo link_zeroing"
           >
-            <span class="header-logo_color">Web</span>Studio
+            <span class="logo_color">Web</span>Studio
           </a>
 
           <ul class="nav-list list_zeroing">
@@ -152,7 +152,7 @@
       <!--Skills -->
       <section class="section skills">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="skill-list list_zeroing">
             <li class="skill-list__item">
               <div class="skill-list__box">
@@ -197,7 +197,7 @@
       <!-- Team -->
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list_zeroing">
             <li class="team-list__item">
               <div class="team-list__card">
@@ -255,7 +255,9 @@
                 />
                 <div class="team-list__description">
                   <h3 class="team-list__title">Ольга Репина</h3>
-                  <p lang="en" class="team-list__speciality">Frontend Developer</p>
+                  <p lang="en" class="team-list__speciality">
+                    Frontend Developer
+                  </p>
                   <div class="team-list_social-links-position">
                     <ul class="social-link-list list_zeroing">
                       <li>
@@ -384,48 +386,50 @@
           </ul>
         </div>
       </section>
+
+      <!-- Regular client -->
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="client-list list_zeroing">
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_5"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="thumb link_zeroing">
-                <svg class="icon">
+              <a href="#" class="client-list__item link_zeroing">
+                <svg class="client-list__icon">
                   <use href="./image/svg/sprite.svg#client_6"></use>
                 </svg>
               </a>
@@ -435,51 +439,65 @@
       </section>
     </main>
 
-    <footer class="futer">
+
+<!-- Footer -->
+    <footer class="footer">
       <div class="container">
         <div>
-          <a lang="en" href="./index.html" class="logo link_zeroing">
-            <span class="logo-color">Web</span>Studio
+          <a lang="en" href="./index.html" class="footer-logo logo link_zeroing">
+            <span class="logo_color">Web</span>Studio
           </a>
           <address id="address" class="address">
-            <p class="item">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="address__item">г. Киев, пр-т Леси Украинки, 26</p>
             <a
               lang="en"
               href="mailto:info@devstudio.com"
-              class="contact link_zeroing item"
+              class="address__contact link_zeroing address__item"
               >info@devstudio.com</a
             >
-            <a href="tel:+380961111111" class="contact link_zeroing item"
+            <a href="tel:+380961111111" class="address__contact link_zeroing address__item"
               >+38 096 111 11 11</a
             >
           </address>
         </div>
         <div class="social-links-position">
-          <h2 class="title">Присоединяйтесь</h2>
+          <h2 class="footer__title">Присоединяйтесь</h2>
           <ul class="social-link-list list_zeroing">
             <li>
-              <a href="#" class=" social-link-list__item social-link-list__item_futer-colors link_zeroing">
+              <a
+                href="#"
+                class="social-link-list__item social-link-list__item_futer-colors link_zeroing"
+              >
                 <svg class="social-link-list__icon">
                   <use href="./image/svg/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link-list__item social-link-list__item_futer-colors link_zeroing">
+              <a
+                href="#"
+                class="social-link-list__item social-link-list__item_futer-colors link_zeroing"
+              >
                 <svg class="social-link-list__icon">
                   <use href="./image/svg/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link-list__item social-link-list__item_futer-colors link_zeroing">
+              <a
+                href="#"
+                class="social-link-list__item social-link-list__item_futer-colors link_zeroing"
+              >
                 <svg class="social-link-list__icon">
                   <use href="./image/svg/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link-list__item social-link-list__item_futer-colors link_zeroing">
+              <a
+                href="#"
+                class="social-link-list__item social-link-list__item_futer-colors link_zeroing"
+              >
                 <svg class="social-link-list__icon">
                   <use href="./image/svg/sprite.svg#linkedin"></use>
                 </svg>
@@ -488,19 +506,19 @@
           </ul>
         </div>
         <div class="mailing-box">
-          <p class="title">Подпишитесь на рассылку</p>
+          <p class="footer__title">Подпишитесь на рассылку</p>
 
           <form class="mailing-form">
             <input
               type="email"
               name="user_email"
-              class="field-input"
+              class="mailing-form__input"
               placeholder="E-mail"
               required
             />
-            <button type="submit" class="button form-submit">
+            <button type="submit" class="button mailing-form__submit-button">
               Подписаться
-              <svg>
+              <svg class="mailing-form__submit-icon">
                 <use href="./image/svg/sprite.svg#icon-send"></use>
               </svg>
             </button>

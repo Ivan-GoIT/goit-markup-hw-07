@@ -3,6 +3,8 @@
   padding: 24px 0;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+
+  &_color {
+    color: var(--accent-color);
+  }
 }
-
-
